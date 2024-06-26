@@ -1,0 +1,126 @@
+.tableContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.table {
+  width: 80%;
+  border-collapse: collapse;
+  box-shadow: 0px 10px 10px #ccc;
+  border-radius: 10px;
+  table-layout: auto;
+}
+
+.table thead {
+  background-color: #878bf6;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.actions svg {
+  cursor: pointer;
+}
+
+thead tr th:first-child,
+tbody tr td:first-child {
+  background-color: #e6e6e6;
+  width: 40px; /* Define uma largura fixa para a coluna de ações */
+}
+
+thead tr th:first-child {
+  background-color: #878bf6;
+}
+
+thead tr th:nth-child(2),
+tbody tr td:nth-child(2) {
+  background-color: #e6e6e6;
+  width: 40px; /* Define uma largura fixa para a coluna de ações */
+}
+
+thead tr th:nth-child(2) {
+  background-color: #878bf6;
+}
+/* Table.module.css */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 80%;
+  }
+  
+  .pageItem {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+  }
+  
+  .pageItem span {
+    margin-right: 10px;
+  }
+  
+  .pageItem button {
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 0 3px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    color: #333;
+    border-radius: 4px;
+  }
+  
+  .pageItem button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .rows {
+    display: flex;
+    align-items: center;
+  }
+  
+  .rows span {
+    margin-right: 10px;
+  }
+  
+  .rows select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .rows select:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .rows select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  

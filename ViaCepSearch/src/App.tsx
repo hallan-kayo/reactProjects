@@ -19,6 +19,7 @@ function App() {
 
   return (
     <>
+      <div className={"topbar"}></div>
       <div className={"root"}>
         <div className={"container"}>
           <div>
@@ -31,7 +32,6 @@ function App() {
               className={"inputcep"}
                 placeholder='Digite o CEP'
                 onChange={(e) => setCep(e.target.value)}
-                value={cep}
               />
             </label>
           </div>
