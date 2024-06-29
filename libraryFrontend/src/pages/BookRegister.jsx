@@ -87,18 +87,15 @@ const rows = [
   },
 ];
 
-const ReaderRegister = () => {
+const BookRegister = () => {
   return (
     <div className={styles.main}>
       <div>
         <SideBar />
       </div>
       <div className={styles.content}>
-        <Header title={"Cadastro de Leitor"} />
-        <div className={styles.box}>
-          <div className={styles.menuTable}>
-            <button className={styles.register}>Inserir </button>
-          </div>
+        <Header title={"Cadastro de Livro"} />
+        <div style={{ marginTop: "50px" }}>
           <Table
             rows={rows}
             columns={columns}
@@ -109,4 +106,4 @@ const ReaderRegister = () => {
     </div>
   );
 };
-export default ReaderRegister;
+export default BookRegister;

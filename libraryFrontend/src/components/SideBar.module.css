@@ -1,58 +1,94 @@
-.container{
-    background-color: #e8e8e8;
-    position: fixed;
-    height: 100vh;
-    width: 30vh;
-    padding: 5vh 0;
-    overflow-y: auto; /* Permite rolagem se necessário */
-    text-align: center;
-    border-left: 8px solid #f4b950;
+.container {
+  background-color: #e8e8e8;
+  height: 100vh;
+  width: 30vh;
+  padding: 5vh 0;
+  overflow-y: auto; /* Permite rolagem se necessário */
+  text-align: center;
+  border-left: 8px solid #f4b950;
 }
 
-.logo{
-    width: 70px;
+.logo {
+  width: 70px;
 }
 
 .navbar {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    text-align: left;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  text-align: left;
 }
 
 .dropdown {
-    position: relative;
-    display: block;
+  position: relative;
+  display: block;
 }
 
 .dropdownbutton {
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    text-align: left;
-    background-color: #e8e8e8;
-    font-size: 12pt;
-    font-weight: bold;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  background-color: #e8e8e8;
+  font-size: 12pt;
+  font-weight: bold;
 }
 
 .dropdownmenu {
-    text-align: left;
-    display: none; /* Inicialmente escondido */
-    margin-top: 5px;
-    width: 100%;
-    padding: 0; 
-    list-style-type: none;
+  text-align: left;
+  display: none; /* Inicialmente escondido */
+  margin-top: 5px;
+  width: 100%;
+  padding: 0;
+  list-style-type: none;
 }
 
 .dropdownmenu.show {
-    display: block; /* Mostrar quando ativo */
+  display: block; /* Mostrar quando ativo */
 }
 
 .dropdownitem {
-    margin-left: -10px;
-    padding: 4px 0px;
-    text-decoration: none;
-    display: block;
-    list-style: none;
+  margin-left: -30px;
+  padding: 4px 0px;
+  text-decoration: none;
+  display: block;
+  list-style: none;
+  cursor: pointer;
 }
+
+.dropdownitem:hover {
+  font-size: 110%;
+}
+
+.sidebar {
+  /* width: 250px; */
+  transition: width 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.sidebarHidden {
+  width: 20px; /* Ajuste conforme necessário */
+  transition: width 0.3s;
+}
+
+.buttonSideBar{
+    border: none;
+    font-size: 1.5rem;
+    color: #0A6786;
+    position: absolute;
+    background: none;
+    background-color: #e8e8e8;
+    border-radius: 50%;
+}
+
+.buttonSideBarVisible {
+    margin-right: -15px; /* Ajuste conforme necessário */
+
+  }
+  
+  .buttonSideBarHidden {
+    margin-left: -10px; /* Ajuste conforme necessário */
+  }

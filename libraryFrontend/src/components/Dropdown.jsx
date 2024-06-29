@@ -1,9 +1,10 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import styles from "./SideBar.module.css";
 
-useState;
-
-const Dropdown = ({ title, items }) => {
+// eslint-disable-next-line react/prop-types
+const Dropdown = ({ title, items, links }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleDropdown = () => {
@@ -19,7 +20,9 @@ const Dropdown = ({ title, items }) => {
         <ul className={styles.drodownmenu}>
           {items.map((item, index) => (
             <li key={index} className={styles.dropdownitem}>
-              {item}
+              <Link to={links[index]} style={{ textDecoration: "none", color: "black" }}>
+                {item}
+              </Link>
             </li>
           ))}
         </ul>
