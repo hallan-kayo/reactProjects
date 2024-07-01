@@ -1,0 +1,12 @@
+.main {
+    display: flex;
+    align-items: flex-start; /* Alinha os elementos no início do eixo transversal (verticalmente) */
+    height: 100%;
+    width: 100%;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }

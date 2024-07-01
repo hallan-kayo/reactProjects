@@ -4,6 +4,7 @@ import BookRegister from "./pages/BookRegister";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import ReaderRegister from "./pages/ReaderRegister";
+import Register from "./pages/Register";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/readerRegister" element={<ReaderRegister />} />
           <Route path="/bookRegister" element={<BookRegister />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
       </BrowserRouter>
     </>

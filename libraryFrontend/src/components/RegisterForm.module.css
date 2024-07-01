@@ -1,0 +1,38 @@
+.formContainer{
+    width: 90%;
+    padding: 2rem;
+}
+
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.labelInput{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    max-width: 100%;
+}
+
+.labelInputSmall{
+    width: 40%;
+}
+
+.labelInputLarge{
+    width: 100%;
+}
+
+.label{
+    
+}
+
+.input{
+    width: 100%;
+    border-radius: 4px;
+    padding: 7px;
+    border: 1px solid rgb(167, 167, 167);
+    background-color: rgb(249, 249, 249);
+    box-shadow: 1px 2px 3px rgb(188, 188, 188);
+}
