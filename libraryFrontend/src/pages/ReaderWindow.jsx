@@ -1,7 +1,8 @@
 import Header from "../components/Header";
 import Table from "../components/Table";
-import styles from "./ReaderRegister.module.css";
+import styles from "./ReaderWindow.module.css";
 
+import { Link } from "react-router-dom";
 import SideBar from "../components/SideBar";
 
 const columns = [
@@ -87,15 +88,20 @@ const rows = [
   },
 ];
 
-const BookRegister = () => {
+const ReaderWindow = () => {
   return (
     <div className={styles.main}>
       <div>
         <SideBar />
       </div>
       <div className={styles.content}>
-        <Header title={"Cadastro de Livro"} />
-        <div style={{ marginTop: "50px" }}>
+        <Header title={"Cadastro de Leitor"} />
+        <div className={styles.box}>
+          <div className={styles.menuTable}>
+            <Link to={"/register"}>
+              <button className={styles.register}>Inserir </button>
+            </Link>
+          </div>
           <Table
             rows={rows}
             columns={columns}
@@ -106,4 +112,4 @@ const BookRegister = () => {
     </div>
   );
 };
-export default BookRegister;
+export default ReaderWindow;

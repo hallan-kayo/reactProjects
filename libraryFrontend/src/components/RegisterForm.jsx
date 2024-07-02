@@ -9,7 +9,9 @@ const RegisterForm = ({ fields }) => {
         {fields.map((fields, index) => (
           <div
             key={index}
-            className={`${styles.labelInput} ${styles[`labelInput${fields.size}`]}`}
+            className={`${styles.labelInput} ${
+              styles[`labelInput${fields.size}`]
+            }`}
           >
             <label className={styles.label}>{fields.field}</label>
             <input type="text" className={styles.input} />
