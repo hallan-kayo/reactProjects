@@ -9,7 +9,7 @@ const ReaderRegister = () => {
   ];
   return (
     <div>
-      <RegisterWindow titleWindow={"Cadastro de Leitor"} fieldsForm={fieldsForm} />
+      <RegisterWindow title={"Cadastro de Leitor"} fields={fieldsForm} />
     </div>
   );
 };

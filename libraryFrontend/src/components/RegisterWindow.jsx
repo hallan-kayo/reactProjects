@@ -5,7 +5,7 @@ import SideBar from "./SideBar";
 import Header from "./Header";
 import styles from "./RegisterWindow.module.css";
 
-const RegisterWindow = ({titleWindow, fieldsForm}) => {
+const RegisterWindow = (props) => {
 
   return (
     <div className={styles.main}>
@@ -13,8 +13,8 @@ const RegisterWindow = ({titleWindow, fieldsForm}) => {
         <SideBar />
       </div>
       <div className={styles.content}>
-        <Header title={titleWindow} />
-        <RegisterForm fields={fieldsForm} />
+        <Header title={props.title} />
+        <RegisterForm fields={props.fields} />
       </div>
     </div>
   );
